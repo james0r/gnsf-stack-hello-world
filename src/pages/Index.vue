@@ -22,6 +22,12 @@
 export default {
   metaInfo: {
     title: 'Hello, world!'
+  },
+  mounted() {
+    fetch('/.netlify/functions/hello')
+    .then(
+      data => console.log(data.body)
+    )
   }
 }
 </script>
