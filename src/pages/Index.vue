@@ -26,7 +26,7 @@ export default {
   mounted() {
     fetch('/.netlify/functions/hello')
     .then(
-      data => console.log(data.body)
+      res => console.log( res )
     )
   }
 }
