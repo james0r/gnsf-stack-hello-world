@@ -4,7 +4,10 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions"
   },
   "dependencies": {
     "gridsome": "^0.7.0"
